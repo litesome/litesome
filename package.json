@@ -1,0 +1,24 @@
+{
+  "name": "litesomeui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liteSomeUI/litesomeUI.git"
+  },
+  "keywords": [
+    "Css",
+    "npm",
+    "package"
+  ],
+  "author": "Jaman Dedy, Gilles Kagarama <jeandedieuam@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liteSomeUI/litesomeUI/issues"
+  },
+  "homepage": "https://github.com/liteSomeUI/litesomeUI#readme"
+}
