@@ -1,0 +1,66 @@
+@import "alert.less";
+@import "border.less";
+@import "buttons.less";
+@import "card.less";
+@import "form.less";
+@import "grid.less";
+@import "heading.less";
+@import "helpers.less";
+@import "shadow.less";
+@import "table.less";
+@import "radius.less";
+@import "spacing.less";
+@import "navbar.less";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  background: #f1f1f1;
+  font-family: "Open Sans", sans-serif;
+  color: #34312d;
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: #303030;
+  text-decoration: none;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/* default tags */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+  padding: 0.001em 0;
+}
