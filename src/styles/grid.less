@@ -1,8 +1,32 @@
+/* containers */
+.container {
+  margin: 0 auto;
+  display: block;
+  max-width: 1100px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.container-full {
+  max-width: 100%;
+}
+.container-sm {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+}
+.container::before,
+.container::after,
+.row::before,
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 .row {
   width: 100%;
   margin-top: 0.8em;
   margin-bottom: 1.4em;
-  box-sizing: border-box;
 }
 .l-sm-1,
 .l-md-1,
@@ -204,7 +228,7 @@
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px)  {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hide-md {
     display: none;
   }
