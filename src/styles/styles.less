@@ -11,17 +11,48 @@
 @import "radius.less";
 @import "spacing.less";
 @import "navbar.less";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "typography.less";
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../../public/fonts/mem5YaGs126MiZpBA-UN_r8OX-hpKKSTj5PW.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../public/fonts/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
+}
 body {
   margin: 0;
-  background: #f1f1f1;
   font-family: "Open Sans", sans-serif;
-  color: #34312d;
-  font-size: 0.9em;
-  font-weight: 200;
+  font-size: 1em;
+  font-weight: 300;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 *,
 *::before,
@@ -43,7 +74,6 @@ html {
 }
 
 a {
-  color: #303030;
   text-decoration: none;
 }
 p {
@@ -63,4 +93,8 @@ nav,
 section {
   display: block;
   padding: 0.001em 0;
+}
+
+header {
+  z-index: 100;
 }

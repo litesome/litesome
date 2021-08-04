@@ -2,7 +2,7 @@
   "name": "litesomeui",
   "version": "1.0.0",
   "description": "",
-  "main": "public/css/styles.min.css",
+  "main": "public/litesome@1.0.0/css/litesome.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp less",

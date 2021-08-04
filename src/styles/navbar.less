@@ -5,13 +5,23 @@ nav {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 1.1em 0 !important;
+  padding: 0.2em 0 !important;
 }
-
+nav::before,
+nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+nav li {
+  padding-top: 0.6em;
+  padding-right: 0.6em;
+}
 nav a {
   flex-grow: 1;
   padding: 0.6em 1em;
   position: relative;
+  font-weight: 400;
 }
 .nav-center {
   display: flex;
@@ -33,18 +43,21 @@ nav .has-dropdown:hover .dropdown {
   border-radius: 2px;
 }
 nav .dropdown li {
-  padding: 0.5em 1em;
+  padding: 1em 0.6em;
 }
 /* Nested navigation list */
 nav li {
   position: relative;
 }
 nav .nested-list {
-  padding: 0.5em 0;
+  padding: 0.3em 0;
   position: relative;
   left: 15px;
-  background: #f1f1f1;
 }
 nav .nested-list li {
-  padding:0.5em 0;
+  padding: 0.3em 0;
+}
+nav.navbar-fixed {
+  position: fixed;
+  border: 1px solid red;
 }

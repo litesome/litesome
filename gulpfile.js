@@ -6,7 +6,7 @@ var gulp = require("gulp"),
   cssmin = require("gulp-cssmin"),
   rename = require("gulp-rename"),
   srcfile = "./src/styles/styles.less",
-  output = "./public/css"
+  output = "./public/litesome@1.0.0/css"
 
 gulp.task("minify", function () {
   return gulp
@@ -18,7 +18,7 @@ gulp.task("minify", function () {
     )
     .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(cssmin())
-    .pipe(rename("styles.min.css"))
+    .pipe(rename("litesome.min.css"))
     .pipe(gulp.dest(output))
 });
 gulp.task("less", function () {
