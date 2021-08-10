@@ -5,7 +5,7 @@ nav {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 0.2em 0 !important;
+  padding: 0.3em 0 !important;
 }
 nav::before,
 nav::after {
@@ -14,14 +14,15 @@ nav::after {
   display: table;
 }
 nav li {
-  padding-top: 0.6em;
-  padding-right: 0.6em;
+  // padding-top: 0.6em;
+  // padding-right: 0.6em;
 }
 nav a {
   flex-grow: 1;
-  padding: 0.6em 1em;
+  padding: 0.3em 1em;
   position: relative;
   font-weight: 400;
+  display: block;
 }
 .nav-center {
   display: flex;
@@ -32,7 +33,7 @@ nav .has-dropdown {
   position: relative;
 }
 nav .has-dropdown .dropdown {
-  display: none;
+  // display: none;
 }
 nav .has-dropdown:hover .dropdown {
   display: block;
@@ -50,14 +51,14 @@ nav li {
   position: relative;
 }
 nav .nested-list {
-  padding: 0.3em 0;
+  padding: 0.1em 0;
   position: relative;
   left: 15px;
 }
 nav .nested-list li {
-  padding: 0.3em 0;
+  padding: 0.1em 0;
 }
-nav.navbar-fixed {
+.navbar-fixed {
   position: fixed;
-  border: 1px solid red;
+  width: 100%;
 }
