@@ -1,6 +1,6 @@
 {
   "name": "@litesome/litesome",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fast and easy-to-use CSS framework, built with simplicity in mind.",
   "main": "public/css/styles.min.css",
   "scripts": {
@@ -24,21 +24,15 @@
   },
   "homepage": "https://github.com/litesome/litesome#readme",
   "devDependencies": {
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-less": "^5.0.0"
-  },
-  "dependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
-    "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-minifier": "^3.5.0",
+    "gulp-less": "^5.0.0",
     "gulp-minify": "^3.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "react-router-dom": "^5.2.0"
+    "gulp-rename": "^2.0.0"
   },
+  "dependencies": {},
   "bin": {
     "gulp": "bin/gulp.js"
   }
