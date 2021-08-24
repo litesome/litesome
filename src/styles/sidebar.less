@@ -1,0 +1,44 @@
+.sidebar {
+  padding: 0 0.5em;
+}
+.sidebar a {
+  flex-grow: 1;
+  padding: 0.6em 1em 0.6em 2.5em;
+  position: relative;
+  font-weight: 400;
+  display: block;
+}
+.sidebar .active {
+  position: relative;
+  color: var(--primary-color);
+}
+.sidebar li {
+  position: relative;
+}
+.sidebar li .icon {
+  position: absolute;
+  left: 1em;
+  color: var(--gray-darken-1);
+}
+.sidebar .active .icon {
+  color: var(--gray-primary);
+}
+.sidebar li .nested-list .icon {
+  position: absolute;
+  left: 1.7em;
+}
+.sidebar .active::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  left: -0.5em;
+  top: 0;
+  height: 100%;
+  background: var(--primary-color);
+}
+.sidebar .separator {
+  background: #b9b9b9;
+  height: 1px;
+  margin: 0.5em 0;
+}

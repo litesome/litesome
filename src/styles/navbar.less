@@ -1,0 +1,42 @@
+header {
+  margin: auto;
+  padding: 0.3em 0.5em !important;
+}
+nav a {
+  flex-grow: 1;
+  padding: 0.3em 1em;
+  position: relative;
+  font-weight: 400;
+  display: block;
+}
+nav .active {
+  background: #e2e2e2;
+  border-radius: 4px;
+}
+header .logo,
+header .logo a {
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+}
+header .logo {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  header,
+  nav {
+    display: flex;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
