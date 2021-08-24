@@ -1,6 +1,6 @@
-# [Litesome 1](https://litesome.github.io)
+# [Litesome CSS Framework](https://github.com/litesome/litesome#readme)
 
-Litesome CSS Framework is collection of CSS styles to consistently make simple and clean websites. It makes browsers render all elements aster and beautifies semantic HTML markups. It is fast and easy-to-use, built with simplicity in mind.
+Litesome CSS Framework is collection of CSS styles to consistently make simple and clean websites. It makes browsers render all elements faster and beautifies semantic HTML markups. It is  easy-to-use and built with simplicity in mind.
 
 # Installation
 
@@ -10,7 +10,7 @@ or
 
 `yarn add litesome`
 
-# Contributors
+# Backers
 
 [Gilles Kagarama</b></sub>](https://github.com/kagaramag) | [Amani Mpangirwa JdD</b></sub>](https://github.com/Jaman-dedy)
 
