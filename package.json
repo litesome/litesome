@@ -1,7 +1,7 @@
 {
-  "name": "litesome",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@litesome/litesome",
+  "version": "0.1.0",
+  "description": "Fast and easy-to-use CSS framework, built with simplicity in mind.",
   "main": "public/css/styles.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liteSomeUI/litesomeUI.git"
+    "url": "git+https://github.com/litesome/litesome.git"
   },
   "keywords": [
     "css",
     "npm",
     "package"
   ],
-  "author": "Jaman Dedy <jeandedieuam@gmail.com>, Gilles Kagarama <kagaramag@gmail.com>",
-  "license": "ISC",
+  "author": "Gilles Kagarama <kagaramag@gmail.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liteSomeUI/litesomeUI/issues"
+    "url": "https://github.com/litesome/litesome/issues"
   },
-  "homepage": "https://github.com/liteSomeUI/litesomeUI#readme",
+  "homepage": "https://github.com/litesome/litesome#readme",
   "devDependencies": {
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0"
@@ -40,6 +40,6 @@
     "react-router-dom": "^5.2.0"
   },
   "bin": {
-    "gulp": "./bin/gulp.js"
+    "gulp": "bin/gulp.js"
   }
 }
