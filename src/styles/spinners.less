@@ -1,0 +1,29 @@
+.spinner {
+    width: 3em;
+    height: 3em;
+    margin: 3em auto;
+    border-radius: 50%;
+    border: 0.3rem solid rgba(var(--primary-rgb), 0.9);
+    border-top-color: rgba(var(--primary-rgb), 0.1);
+    -webkit-animation: 1s spin infinite linear;
+    animation: 1s spin infinite linear;
+  }
+  
+  @-webkit-keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner.spinner-lg {
+    width: 6em;
+    height: 6em;
+    margin: 3em auto;
+  }
+  
