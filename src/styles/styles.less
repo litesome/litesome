@@ -6,6 +6,7 @@
 @import "border.less";
 @import "buttons.less";
 @import "card.less";
+@import "fonts.less";
 @import "form.less";
 @import "grid.less";
 @import "heading.less";
@@ -19,46 +20,19 @@
 @import "spinners.less";
 @import "table.less";
 @import "typography.less";
+@import "icons.less";
 
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(../../public/fonts/mem5YaGs126MiZpBA-UN_r8OX-hpKKSTj5PW.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-@font-face {
-  font-family: "Open Sans";
-  font-style: bold;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../../public/fonts/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2)
-    format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
-    U+FE2E-FE2F;
-}
-@font-face {
-  font-family: "ifont";
-  src: url("../../public/icons/ifont.eot");
-  src: url("../../public/icons/ifont.eot?#iefix") format("embedded-opentype"),
-    url("../../public/icons/ifont.woff") format("woff"),
-    url("../../public/icons/ifont.ttf") format("truetype"),
-    url("../../public/icons/ifont.svg#ifont") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ifont";
-  src: url("../../public/icons/ifont.eot");
-  src: url("../../public/icons/ifont.eot?#iefix") format("embedded-opentype"),
-    url("../../public/icons/ifont.woff") format("woff"),
-    url("../../public/icons/ifont.ttf") format("truetype"),
-    url("../../public/icons/ifont.svg#ifont") format("svg");
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --danger-color: #e4002b;
+  --info-color: #0C5FC4;
+  --success-color: #07a24f;
+  --dark-color: #282c34;
+  --light-color: #dfdfdf;
+  --white-color: #ffffff;
+  --gray-lighten-1: #d4d4d4;
+  --gray-lighten-2: #b9b9b9;
+  --gray-darken-1: #626262;
+  --gray-darken-2: #424242;
 }
 
 body {
@@ -69,6 +43,8 @@ body {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: var(--main-bg-color);
+  color: var(--base-color);
 }
 * {
   margin: 0;
@@ -97,6 +73,7 @@ html {
 
 a {
   text-decoration: none;
+  color: rgba(var(--primary-rgb), 0.8);
 }
 p {
   margin-top: 0.2em;
@@ -123,132 +100,208 @@ hr {
   border-top: 1px solid #e1e1e1;
 }
 
-[data-icon]:before {
-  font-family: "ifont" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* General Color, START */
+.sidebar a,
+nav a,
+header a {
+  color: var(--base-color);
+}
+header {
+  background: var(--main-bg-color);
+}
+code.code-wrapper {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em !important;
+  color: var(--danger-color);
+  word-wrap: break-word;
+  background-color: #f3d7d7;
+  font-weight: 400;
+  border-radius: 3px;
+  padding: 0.18em 0.4em 0.2em 0.4em;
+  margin: auto 0.2em;
+}
+.code-example {
+  margin: 0.5em 0;
+}
+/* Color Palette */
+
+.primary {
+  background: var(--primary-color);
+}
+.secondary {
+  background: var(--secondary-color);
+}
+.danger {
+  background: var(--danger-color);
+}
+.info {
+  background: var(--info-color);
+}
+.success {
+  background: var(--success-color);
+}
+.dark {
+  background: var(--dark-color);
+}
+.light {
+  background: var(--light-color);
+}
+.white {
+  background: var(--white-color);
+}
+.gray-lighten-1 {
+  background: var(--gray-lighten-1);
+}
+.gray-lighten-2 {
+  background: var(--gray-lighten-2);
+}
+.gray-darken-1 {
+  background: var(--gray-darken-1);
+}
+.gray-darken-2 {
+  background: var(--gray-darken-2);
+}
+/* Bordered buttons */
+.bordered-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+.bordered-secondary {
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+.bordered-danger {
+  border-color: var(--danger-color);
+  color: var(--danger-color);
+}
+.bordered-info {
+  border-color: var(--info-color);
+  color: var(--info-color);
+}
+.bordered-success {
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+.bordered-dark {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+}
+.bordered-light {
+  border-color: var(--light-color);
+}
+/* Adjust light buttons: background*/
+.button.light {
+  color: var(--dark-color);
+}
+.bordered-light {
+  color: var(--dark-color);
+}
+/* Color text */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-danger {
+  color: var(--danger-color);
+}
+.text-info {
+  color: var(--info-color);
+}
+.text-success {
+  color: var(--success-color);
+}
+.text-dark {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+.text-base-color {
+  color: var(--base-color);
+}
+.text-lighten-1 {
+  color: var(--gray-lighten-1);
+}
+.text-lighten-2 {
+  color: var(--gray-lighten-2);
+}
+.text-darken-1 {
+  color: var(--gray-darken-1);
+}
+.text-darken-2 {
+  color: var(--gray-darken-2);
+}
+/* Color border  */
+.border-primary {
+  border-color: var(--primary-color);
+}
+.border-secondary {
+  border-color: var(--secondary-color);
+}
+.border-danger {
+  border-color: var(--danger-color);
+}
+.border-info {
+  border-color: var(--info-color);
+}
+.border-success {
+  border-color: var(--success-color);
+}
+.border-dark {
+  border-color: var(--secondary-color);
+}
+.border-light {
+  border-color: var(--light-color);
+}
+/* Color border  */
+.box.primary {
+  color: var(--light-color);
+  background: var(--primary-color);
+}
+.box.secondary {
+  color: var(--light-color);
+  background: var(--secondary-color);
+}
+.box.success {
+  color: var(--light-color);
+  background: var(--success-color);
+}
+.box.danger {
+  color: var(--light-color);
+  background: var(--danger-color);
+}
+.box.info {
+  color: var(--light-color);
+  background: var(--info-color);
+}
+.box.dark {
+  color: var(--light-color);
+  background: var(--dark-color);
+}
+.box {
+  color: var(--base-color);
 }
 
-[class^="i-"]:before,
-[class*=" i-"]:before {
-  font-family: "ifont" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  vertical-align: text-top;
+/* Navbar: Dark navigation */
+.navbar.dark,
+.navbar.dark a {
+  color: var(--light-color);
 }
 
-.i-bell-slash:before {
-  content: "\64";
+/* alert messages */
+
+.alert.success {
+  background: #d3f3e2;
+  color: var(--success-color);
 }
-.i-bell:before {
-  content: "\66";
+.alert.info {
+  background: #ccebf5;
+  color: var(--info-color);
 }
-.i-menu:before {
-  content: "\65";
+.alert.danger {
+  background-color: #ffdce0;
+  color: var(--danger-color);
 }
-.i-right:before {
-  content: "\62";
-}
-.i-left:before {
-  content: "\63";
-}
-.i-message:before {
-  content: "\68";
-}
-.i-gplus:before {
-  content: "\69";
-}
-.i-instagram:before {
-  content: "\6a";
-}
-.i-phone:before {
-  content: "\6b";
-}
-.i-quote-left:before {
-  content: "\6c";
-}
-.i-user:before {
-  content: "\6f";
-}
-.i-unlock:before {
-  content: "\70";
-}
-.i-check:before {
-  content: "\71";
-}
-.i-users:before {
-  content: "\76";
-}
-.i-twitter:before {
-  content: "\79";
-}
-.i-facebook:before {
-  content: "\7a";
-}
-.i-search:before {
-  content: "\61";
-}
-.i-app:before {
-  content: "\67";
-}
-.i-calendar:before {
-  content: "\6e";
-}
-.i-music:before {
-  content: "\6d";
-}
-.i-photo:before {
-  content: "\73";
-}
-.i-play:before {
-  content: "\74";
-}
-.i-news:before {
-  content: "\75";
-}
-.i-times:before {
-  content: "\77";
-}
-.i-clock:before {
-  content: "\78";
-}
-.i-comment:before {
-  content: "\42";
-}
-.i-home:before {
-  content: "\44";
-}
-.i-001-shuttle:before {
-  content: "\43";
-}
-.i-grid:before {
-  content: "\45";
-}
-.i-components:before {
-  content: "\46";
-}
-.i-settings-2:before {
-  content: "\47";
-}
-.i-utilities:before {
-  content: "\48";
-}
-.i-color:before {
-  content: "\49";
-}
-.i-icons:before {
-  content: "\4a";
-}
+/* General Color, END */

@@ -4,11 +4,11 @@ Litesome CSS Framework is collection of CSS styles to consistently make simple a
 
 # Installation
 
-`npm i litesome --save`
+`npm i @litesome/litesome --save`
 
 or
 
-`yarn add litesome`
+`yarn add @litesome/litesome`
 
 # Backers
 
