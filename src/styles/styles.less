@@ -24,20 +24,20 @@
 
 :root {
   --danger-color: #e4002b;
-  --info-color: #0051C2;
+  --info-color: #0051c2;
   --success-color: #07a24f;
   --dark-color: #282c34;
-  --light-color: #dfdfdf;
+  --light-color: #f0f0f0;
   --white-color: #ffffff;
   --gray-lighten-1: #d4d4d4;
-  --gray-lighten-2: #b9b9b9;
+  --gray-lighten-2: #cfb6b6;
   --gray-darken-1: #626262;
   --gray-darken-2: #424242;
 }
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5;
@@ -106,7 +106,7 @@ header {
   z-index: 100;
 }
 code.code-wrapper {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 0.95em !important;
   color: var(--danger-color);
   word-wrap: break-word;
@@ -160,26 +160,39 @@ code.code-wrapper {
 /* Bordered buttons */
 .bordered-primary {
   border-color: var(--primary-color);
+}
+button.bordered-primary {
   color: var(--primary-color);
 }
 .bordered-secondary {
   border-color: var(--secondary-color);
+}
+button.bordered-secondary {
   color: var(--secondary-color);
 }
 .bordered-danger {
   border-color: var(--danger-color);
+}
+button.bordered-danger {
   color: var(--danger-color);
 }
 .bordered-info {
   border-color: var(--info-color);
+}
+button.bordered-info {
   color: var(--info-color);
 }
 .bordered-success {
   border-color: var(--success-color);
   color: var(--success-color);
 }
+button.bordered-success {
+  color: var(--success-color);
+}
 .bordered-dark {
   border-color: var(--dark-color);
+}
+button.bordered-dark {
   color: var(--dark-color);
 }
 .bordered-light {
@@ -293,7 +306,7 @@ code.code-wrapper {
   color: var(--success-color);
 }
 .alert.info {
-  background: #D9E7FC;
+  background: #d9e7fc;
   color: var(--info-color);
 }
 .alert.danger {

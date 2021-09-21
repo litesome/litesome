@@ -10,10 +10,6 @@ or
 
 `yarn add @litesome/litesome`
 
-# Backers
-
-[Gilles Kagarama</b></sub>](https://github.com/kagaramag) | [Amani Mpangirwa JdD</b></sub>](https://github.com/Jaman-dedy)
-
 # Contribution
 
 Please before making a PR, read first this [Contributing Guideline](./CONTRIBUTING.md)
