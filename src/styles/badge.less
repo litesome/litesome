@@ -7,3 +7,28 @@
   z-index: 1;
   top: -0.3em;
 }
+.status {
+  font-size: 0.8em;
+  color: #fff;
+  padding: 0.3em 0.8em;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+.status.success {
+  background: #d3f3e2;
+  color: var(--success-color);
+}
+.status.info {
+  background: #d9e7fc;
+  color: var(--info-color);
+}
+.status.danger {
+  background-color: #ffdce0;
+  color: var(--danger-color);
+}
+.status.warning {
+  background-color: #ffe8c5;
+  color: #f89602;
+}
