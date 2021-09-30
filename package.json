@@ -1,6 +1,6 @@
 {
   "name": "@litesome/litesome",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "Fast and easy-to-use CSS framework, built with simplicity in mind.",
   "main": "public/css/styles.min.css",
   "scripts": {
