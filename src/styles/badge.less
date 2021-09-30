@@ -1,20 +1,66 @@
+/* Test Purpose */
 .badge {
   color: #fff;
   padding: 0.1em 0.3em;
   border-radius: 4px;
   font-size: 70%;
-  position: relative;
+  position: absolute;
   z-index: 1;
-  top: -0.3em;
+  right: -5px;
+  top: -8px;
+  padding: 5px 8px;
+  background: var(--danger-color);
+  color: var(--white-color);
 }
+.badge.light {
+  background: var(--light-color);
+  color: var(--base-color);
+}
+.badge.success {
+  background: var(--success-color);
+}
+.badge.info {
+  background: var(--info-color);
+}
+.badge.warning {
+  background: var(--warning-color);
+}
+.badge.dot-badge {
+  width: 14px;
+  height: 14px;
+  right: -5px;
+  top: -5px;
+  border: 1px solid #ffffff;
+  border-radius: 10px !important;
+  background: var(--danger-color);
+  padding: unset;
+  font-size: 0px;
+}
+.badge.inline-badge {
+  position: initial !important;
+  top: unset;
+  margin-left: 7px;
+  border-radius: 3px !important;
+}
+h1 .badge,
+h2 .badge,
+h3 .badge,
+h4 .badge,
+h5 .badge,
+h6 .badge {
+  position: initial !important;
+  top: unset;
+}
+
 .status {
   font-size: 0.8em;
   color: #fff;
-  padding: 0.3em 0.8em;
+  padding: 0.3em 1em;
   border-radius: 10px;
   position: relative;
   z-index: 1;
   font-weight: bold;
+  font-size: 70%;
 }
 .status.success {
   background: #d3f3e2;
@@ -24,8 +70,12 @@
   background: #d9e7fc;
   color: var(--info-color);
 }
+.status.warning {
+  background: #d9e7fc;
+  color: var(--warning-color);
+}
 .status.danger {
-  background-color: #ffdce0;
+  background-color: #ffdce0!important;
   color: var(--danger-color);
 }
 .status.warning {

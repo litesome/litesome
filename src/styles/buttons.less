@@ -1,34 +1,114 @@
-.button {
-  padding: 0.8em 2em;
-  margin: 0.3em 0.6em 0.3em 0;
+button, a.button-link {
+  padding: 0.9em 1.8em;
+  margin: 0.3em 0.8em 0.3em 0;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--primary-color);
   outline: none;
   cursor: pointer;
   color: #ffffff;
   font-weight: bold;
+  position: relative;
   transition: 0.25s;
+  background: var(--primary-color);
 }
-.button.button-sm {
+
+.secondary {
+  background: var(--light-color) !important;
+  border-color: var(--light-color);
+  color: var(--gray-darken-2);
+}
+.outline {
+  background: var(--white-color) !important;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.danger {
+  background: var(--danger-color) !important;
+  border-color: var(--danger-color);
+  color: var(--white-color);
+}
+.button-sm {
   padding: 0.6em 0.8em;
   margin: 0.3em 0.6em 0.3em 0;
   font-size: 70%;
 }
-.button.button-lg {
+.button-lg {
   padding: 1.4em 2.2em;
   margin: 0.3em 0.6em 0.3em 0;
 }
-.button.button-block {
+.button-block {
   display: block !important;
   width: 100%;
 }
-.button:disabled {
-  background: #cdcdcd;
+button:disabled {
+  box-shadow: none;
+  color: #a1a1a1 !important;
+  background: var(--gray-lighten-1) !important;
+  border: 1px solid var(--gray-lighten-1);
+  cursor: unset;
 }
-.button:hover {
-  transition: box-shadow 0.3s ease-in-out;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+button:disabled:hover {
+  box-shadow: none;
 }
-[class*="bordered-"] {
+.button.button-icon {
+  padding: 0;
+  margin: 0.3em 0.6em 0.3em 0;
+  border-radius: 5px;
+  color: var(--base-color);
+  font-size: 1.4em;
+  background: none;
+}
+.button.button-icon:hover {
+  background: none;
+  box-shadow: none;
+}
+button .loading {
+  width: 14px;
+  height: 14px;
+  margin: 0 1em 0 0;
+  float: left;
+  position: relative;
+}
+button .loading::before {
+  content: "";
+  position: absolute;
+  width: 14px !important;
+  height: 14px;
+  top: 0;
+  left: 0;
+  float: left;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  border-top-color: var(--primary-color);
+  -webkit-animation: 1s loading-btn infinite linear;
+  animation: 1s loading-btn infinite linear;
+}
+
+@-webkit-keyframes loading-btn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-btn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+button:disabled .loading {
+  display: none;
+}
+button:not(:disabled):hover {
+  filter: brightness(90%);
+}
+button.secondary .loading::before {
+  border: 2px solid var(--base-color);
+  border-top-color: var(--light-color);
+}
+button.danger .loading::before {
+  border: 2px solid var(--danger-color);
+  border-top-color: var(--light-color);
+}
+[class*="border-"] {
   border: 1px solid;
 }
