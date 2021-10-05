@@ -1,4 +1,5 @@
-button, a.button-link {
+.button,
+a.button {
   padding: 0.9em 1.8em;
   margin: 0.3em 0.8em 0.3em 0;
   border-radius: 5px;
@@ -10,8 +11,17 @@ button, a.button-link {
   position: relative;
   transition: 0.25s;
   background: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: bold;
 }
-
+a.button {
+  padding-top: 0.65em !important;
+  padding-bottom: 0.65em !important;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
 .secondary {
   background: var(--light-color) !important;
   border-color: var(--light-color);
@@ -40,14 +50,18 @@ button, a.button-link {
   display: block !important;
   width: 100%;
 }
-button:disabled {
+.button:disabled {
   box-shadow: none;
-  color: #a1a1a1 !important;
-  background: var(--gray-lighten-1) !important;
-  border: 1px solid var(--gray-lighten-1);
+  border: 1px solid #e9e9e9;
   cursor: unset;
+  color: #a1a1a1 !important;
+  background: #e9e9e9 !important;
 }
-button:disabled:hover {
+.button:disabled.outline {
+  border: 1px solid #b9b9b9 !important;
+}
+
+.button:disabled:hover {
   box-shadow: none;
 }
 .button.button-icon {
@@ -62,14 +76,14 @@ button:disabled:hover {
   background: none;
   box-shadow: none;
 }
-button .loading {
+.button .loading {
   width: 14px;
   height: 14px;
   margin: 0 1em 0 0;
   float: left;
   position: relative;
 }
-button .loading::before {
+.button .loading::before {
   content: "";
   position: absolute;
   width: 14px !important;
@@ -95,17 +109,17 @@ button .loading::before {
     transform: rotate(360deg);
   }
 }
-button:disabled .loading {
+.button:disabled .loading {
   display: none;
 }
-button:not(:disabled):hover {
+.button:not(:disabled):hover {
   filter: brightness(90%);
 }
-button.secondary .loading::before {
+.button.secondary .loading::before {
   border: 2px solid var(--base-color);
   border-top-color: var(--light-color);
 }
-button.danger .loading::before {
+.button.danger .loading::before {
   border: 2px solid var(--danger-color);
   border-top-color: var(--light-color);
 }
